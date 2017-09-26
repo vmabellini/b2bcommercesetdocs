@@ -3,17 +3,21 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to b2bcommercesetdocs's documentation!
-==============================================
+Atma IT Solutions - B2B Commerce Set
+====================================
+
+Bem-vindo ao manual de integração da plataforma Atma B2B.
+
+O objetivo desse manual é prover todas as informações necessárias sobre a arquitetura do sistema, o fluxo dos dados e os passos necessários para integrar o site B2B com outros sistemas.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
 
 
-Indices and tables
-==================
+Índices e tabelas
+=================
 
 * :ref:`genindex`
 * :ref:`modindex`
