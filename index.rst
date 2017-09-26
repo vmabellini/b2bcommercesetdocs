@@ -1,4 +1,4 @@
-.. b2bcommercesetdocs documentation master file, created by
+Ôªø.. b2bcommercesetdocs documentation master file, created by
    sphinx-quickstart on Mon Sep 25 21:32:13 2017.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -6,9 +6,9 @@
 Atma IT Solutions - B2B Commerce Set
 ====================================
 
-Bem-vindo ao manual de integraÁ„o da plataforma Atma B2B.
+Bem-vindo ao manual de integra√ß√£o da plataforma Atma B2B.
 
-O objetivo desse manual È prover todas as informaÁıes necess·rias sobre a arquitetura do sistema, o fluxo dos dados e os passos necess·rios para integrar o site B2B com outros sistemas.
+O objetivo desse manual √© prover todas as informa√ß√µes necess√°rias sobre a arquitetura do sistema, o fluxo dos dados e os passos necess√°rios para integrar o site B2B com outros sistemas.
 
 .. toctree::
    :maxdepth: 3
@@ -16,7 +16,7 @@ O objetivo desse manual È prover todas as informaÁıes necess·rias sobre a arquit
 
 
 
-Õndices e tabelas
+√çndices e tabelas
 =================
 
 * :ref:`genindex`
