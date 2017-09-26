@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'b2bcommercesetdocs'
+project = 'atmab2b'
 copyright = '2017, Atma IT Solutions'
 author = 'Atma IT Solutions'
 
