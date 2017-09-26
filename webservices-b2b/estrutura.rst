@@ -6,7 +6,7 @@ Todas as chamadas aos nossos webservices possuem objetos distintos de Request e 
 Enquanto todos os objetos de Request variam entre si, todos os objetos de Response possuem as seguintes propriedades em comum:
 
 .. list-table:: Estrutura básica
-   :widths: 15 10 auto
+   :widths: auto
    :header-rows: 1
 
    * - Propriedade
