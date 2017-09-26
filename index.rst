@@ -12,7 +12,11 @@ O objetivo desse manual é prover todas as informações necessárias sobre a ar
 
 .. toctree::
    :maxdepth: 3
-   :caption: Contents:
+   
+   visao-geral/index.rst
+   passo-a-passo/index.rst
+   webservices/index.rst
+   giapi/index.rst
 
 
 
