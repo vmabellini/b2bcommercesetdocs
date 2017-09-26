@@ -6,7 +6,7 @@
 Atma IT Solutions - B2B Commerce Set
 ====================================
 
-Bem-vindo ao manual de integração da plataforma Atma B2B.
+Bem-vindo ao manual de integração da plataforma Atma B2B!
 
 O objetivo desse manual é prover todas as informações necessárias sobre a arquitetura do sistema, o fluxo dos dados e os passos necessários para integrar o site B2B com outros sistemas.
 
