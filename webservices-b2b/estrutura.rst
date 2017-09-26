@@ -18,8 +18,9 @@ Enquanto todos os objetos de Request variam entre si, todos os objetos de Respon
    * - ErrorType
      - string
      - Tipo do Erro. Os valores podem ser:
+
        **InvalidParameterException**: Erro ocorrido quando algum campo do 
-       request do webservice possui algum valor inválido. 
+       request do webservice possui algum valor inválido.
        Ex: Id não encontrado, CNPJ inválido.
 
        **SystemException**: Qualquer outro erro não previsto pelo sistema.
