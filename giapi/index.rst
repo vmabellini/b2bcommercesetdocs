@@ -1,5 +1,5 @@
-﻿API genérica de integração (GI API)
-===================================
+﻿APIs de integração (GI API)
+===========================
 
 O **Site B2B** realiza chamadas para o ambiente do cliente para obter dados de preços, clientes, estoque, prazos de pagamento e enviar os pedidos feitos pelo site.
 
