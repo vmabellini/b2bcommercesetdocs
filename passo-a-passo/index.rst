@@ -7,6 +7,7 @@ Para facilitar o processo de desenvolvimento de toda a integração, **nós reco
 #. Determinar qual será a frequência necessária para que novos produtos sejam integrados no site B2B e criar rotinas de atualização de acordo com essas regras.
 #. Testar se a carga de dados está funcionando corretamente em um ambiente de homologação; nesse período o site B2B estará conectado com a GIAPI de demonstração, o que permite testar todo o fluxo de dados da navegação com dados fictícios.
 #. Iniciar o desenvolvimento da GIAPI, **levando em consideração os seguintes aspectos**:
+
    #. Seu ERP atual possui ferramentas que facilitam o desenvolvimento de uma API REST para integrar-se ao site B2B?
    #. Seu ERP atual possui limitações técnicas que podem comprometer o desempenho do site com muitos usuários simultâneos?
    #. Será necessária uma camada intermediária entre o ERP e o site B2B desenvolvida em uma linguagem mais moderna que possua mais recursos para fornecer os métodos da GIAPI?
