@@ -30,3 +30,5 @@ O Site B2B fornece os Webservices para integração com os sistemas internos dos
 
 **OBS: Para os endereços REST, adicione /Help no final do endereço para consultar os exemplos**
 
+**OBS 2: Nós recomendamos o uso do SoapUI como ferramenta para testar as chamadas WSDL.**
+
