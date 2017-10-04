@@ -17,7 +17,7 @@ O objetivo desse manual é prover todas as informações necessárias sobre a ar
    admin/index.rst
    processos/index.rst
    faq.rst
-   Template GIAPI <http://apidev.atma-it.com/Help>
+   template/index.rst
 
 
 
