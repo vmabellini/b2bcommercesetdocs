@@ -22,3 +22,4 @@ Nos subtópicos seguintes abordaremos cada método de forma detalhada.
    revenda/index.rst
    categoria/index.rst
    fabricante/index.rst
+   estoque/index.rst
