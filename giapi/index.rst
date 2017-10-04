@@ -8,3 +8,8 @@ Para isso, desenvolvemos uma interface de comunicação baseada em REST onde o S
 Existe uma documentação dinâmica no nosso ambiente de homologação gerada automaticamente pela nossa API no endereço: http://apidev.atma-it.com/Help. A mesma documentação também é gerada automaticamente ao executar o projeto template.
 
 Nos subtópicos seguintes detalhamos melhor todo o processo de integração.
+
+.. toctree::
+
+   preparo.rst
+   token.rst

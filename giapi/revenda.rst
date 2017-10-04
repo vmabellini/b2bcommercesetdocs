@@ -1,4 +1,6 @@
-﻿Fluxo de cadastro de revendas
+﻿TODO: onde colocar a parte de revendas, visto que existe as pontas em dois lugares?
+
+Fluxo de cadastro de revendas
 =============================
 
 O fluxo de cadastro de revendas é um dos principais e também um dos mais complexos visto que existem muitos cenários possíveis.
