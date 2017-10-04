@@ -27,14 +27,13 @@ Conceito
       Host: apidev.atma-it.com
       Content-Type: application/x-www-form-urlencoded
 
-
       grant_type=password&username=admin%40yourapi.com&password=Password123!
 
 - A GIAPI deve retornar um token de autenticação através de uma resposta JSON no seguinte formato (OBRIGATÓRIO):
 
   .. code-block:: json
 
-      Content-Type: application/json
+      Content-Type: application/json;charset=UTF-8
 
       {
          "access_token": "l8Im3uUH1Oxs8Dwj…DBza3-eDS7cDDh4hCSQdx",
@@ -49,6 +48,8 @@ Para testar de forma simples indicamos o uso do **Postman**, realizando a chamad
 .. image:: token_call.png
 
 É possível também testar a chamada do Site B2B para a GIAPI através do log de chamadas, conforme citado no tópico :doc:`Preparando o ambiente <preparo>`.
+
+Importante ressaltar que a GIAPI deve ter um mecanismo de armazenamento do token, para que ele possa ser validado em cada chamada realizada à GIAPI.
 
 Recebendo o token
 -----------------

@@ -22,7 +22,8 @@ A entidade Fabricante é a mais simples de todas. É exigido que do lado do Erp 
      - string
      - Nome do fabricante exibido no Site B2B
 
-Métodos:
+Métodos
+-------
 
 .. toctree::
    

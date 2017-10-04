@@ -15,6 +15,7 @@ O objetivo desse manual é prover todas as informações necessárias sobre a ar
    webservices-b2b/index.rst
    giapi/index.rst
    admin/index.rst
+   Template GIAPI <http://apidev.atma-it.com/Help>
 
 
 

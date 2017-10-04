@@ -9,7 +9,8 @@ O sistema de atualização de estoque é o único que além de poder ser ativado
 
 Toda vez que um pedido estiver prestes a ser efetuado, o **Site B2B** realiza uma verificação no ERP para atualizar o estoque e obter o dado mais recente, evitando que um pedido seja fechado sem estoque ativo no ERP.
 
-Métodos:
+Métodos
+-------
 
 .. toctree::
    

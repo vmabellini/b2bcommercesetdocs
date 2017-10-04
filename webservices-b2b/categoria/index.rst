@@ -28,7 +28,8 @@ Além disso, as categorias são organizadas em forma de árvore, geralmente com 
      - string
      - ErpId da categoria pai. Caso essa categoria seja uma categoria raiz, deve-se enviar como null.
 
-Métodos:
+Métodos
+-------
 
 .. toctree::
    
