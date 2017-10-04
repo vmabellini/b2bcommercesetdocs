@@ -15,3 +15,8 @@ Para facilitar o processo de desenvolvimento de toda a integração, **nós reco
 É importante ressaltar que **antes do desenvolvimento das integrações é necessário toda uma análise do ambiente atual** para evitar problemas futuros, como lentidão do site, conexão ruim entre o site B2B e a GIAPI, dificuldades técnicas de fornecer a estrutura necessária para a API e etc.
 
 Recomendamos que o desenvolvimento da GIAPI se inicie através dos métodos de obtenção de preço de produtos, pois eles costumam ser muito requisitados e podem servir como um bom parâmetro para medir o desempenho da comunicação entre as plataformas.
+
+Preparando o Site B2B
+---------------------
+
+Depois de seguir as instruções e configurar as integrações com os webservices do Site B2B e também criar a GIAPI
