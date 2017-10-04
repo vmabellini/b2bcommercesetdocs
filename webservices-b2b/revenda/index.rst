@@ -3,6 +3,10 @@
 
 A integração de revendas envolve um número elevado de fluxos possíveis de integrações e por isso é necessária uma atenção especial ao desenvolver essa parte.
 
+O diagrama abaixo ilustra o fluxo de cadastro de revenda:
+
+.. image:: fluxo.png
+
 Criação de revenda
 ------------------
 
