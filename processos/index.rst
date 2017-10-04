@@ -3,5 +3,7 @@
 
 .. toctree::
 
-   processoconfirmacaopagto.rst
-   opcoesprazopagto.rst
+   revenda/index.rst
+   processoconfirmacaopagto/index.rst
+   opcoesprazopagto/index.rst
+   rma/index.rst
