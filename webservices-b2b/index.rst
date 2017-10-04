@@ -19,7 +19,8 @@ Nos subtópicos seguintes abordaremos cada método de forma detalhada.
    estrutura.rst
    seguranca.rst
    endpoints.rst
-   revenda/index.rst
    categoria/index.rst
    fabricante/index.rst
+   revenda/index.rst
+   produto/index.rst
    estoque/index.rst
