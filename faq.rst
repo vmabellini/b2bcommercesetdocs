@@ -13,10 +13,12 @@ Consegui pegar o erro no log, mas ainda assim não entendi qual o problema. Exis
 -------------------------------------------------------------------------------------------------------------------
 
 - Google Postman
+
   Através do Postman é possível simular todos os requests para a sua API.
   Muito útil também para realizar comparações dos retornos da sua API com a API demo da GI API para ver as diferenças e diagnosticar eventuais erros nos formatos de dados e Headers HTTP.
 
 - Fiddler
+
   Ferramenta mais avançada, permite diagnosticar com mais detalhes os requests e responses para a API, além de capturar todas as chamadas que o seu PC dispara para a rede/internet.
 
 
