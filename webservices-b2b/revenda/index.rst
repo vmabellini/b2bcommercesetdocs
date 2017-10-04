@@ -3,7 +3,7 @@
 
 A integração de revendas envolve um número elevado de fluxos possíveis de integrações e por isso é necessária uma atenção especial ao desenvolver essa parte.
 
-Abaixo temos as descrições de como funcionam os métodos de cadastro de revenda do webservice. Para entender todo o processo de cadastro de revenda, que envolve também a GIAPI, :doc:`clique aqui <processos/revenda>`.
+Abaixo temos as descrições de como funcionam os métodos de cadastro de revenda do webservice. Para entender todo o processo de cadastro de revenda, que envolve também a GIAPI, :doc:`clique aqui <../../processos/revenda/index>`.
 
 Métodos
 -------
