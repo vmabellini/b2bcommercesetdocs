@@ -38,6 +38,8 @@ Essas são as características principais de um produto:
      - string
      - ErpId das categorias do produto. Um produto pode estar vinculado a mais de uma categoria ao mesmo tempo.
 
+Existem muitas outras propriedades nas entidades de produto. Os detalhes específicos estão na documentação de cada método.
+
 Todo produto possui N variantes. Quando o cliente faz a compra no site, ele na verdade compra um dos variantes do produto.
 
 **ATENÇÃO: Existem dois modos possíveis de lidar com produtos no Site B2B e esse modo deve ser escolhido antes da integração ser iniciada, devendo contatar a Atma para que nós possamos configurar corretamente seu ambiente da forma correta.**

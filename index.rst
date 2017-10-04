@@ -12,6 +12,7 @@ O objetivo desse manual é prover todas as informações necessárias sobre a ar
    passo-a-passo/index.rst
    webservices-b2b/index.rst
    giapi/index.rst
+   admin/index.rst
 
 
 
