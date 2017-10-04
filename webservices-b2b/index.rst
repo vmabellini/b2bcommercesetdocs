@@ -20,3 +20,4 @@ Nos subtópicos seguintes abordaremos cada método de forma detalhada.
    seguranca.rst
    enderecos.rst
    revenda.rst
+   categoria.rst
