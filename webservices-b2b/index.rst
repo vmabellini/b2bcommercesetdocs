@@ -19,5 +19,5 @@ Nos subtópicos seguintes abordaremos cada método de forma detalhada.
    estrutura.rst
    seguranca.rst
    enderecos.rst
-   revenda.rst
-   categoria.rst
+   revenda/index.rst
+   categoria/index.rst
