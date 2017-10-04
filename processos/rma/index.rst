@@ -1,5 +1,5 @@
-﻿Trocas e devolução de mercadorias (SRM/RMA)
-===========================================
+﻿Trocas e devolução de mercadorias
+=================================
 
 Temos um módulo de trocas e devoluções que permite o usuário preencher uma lista de itens que ele deseja retornar, bem como os motivos.
 
