@@ -17,9 +17,9 @@ Conceito
 - Caso não tenha o token ou ele tenha expirado, o Site B2B irá chamar a URL da GIAPI + /token.
      Ex: http://www.minhagiapi.com.br/token
 - O Site B2B irá fazer uma chamada POST para o http://www.minhagiapi.com.br/token passando as seguintes informações:
-   -grant_type: "password"
-   -username: nome de usuário configurado na tela Admin do Site B2B
-   -password: senha configurada na tela Admin do Site B2B
+   - grant_type: "password"
+   - username: nome de usuário configurado na tela Admin do Site B2B
+   - password: senha configurada na tela Admin do Site B2B
 - A GIAPI deve retornar um token de autenticação através de uma resposta JSON no seguinte formato (OBRIGATÓRIO):
 
   .. code-block:: json
@@ -31,5 +31,5 @@ Conceito
          "expires_in": 1209599
       }
    
-  **access_token**: é uma string que corresponde ao token retornado pela GIAPI. Ela será enviada no HEADER de todas as chamadas para a GIAPI. Cabe ao cliente validar esse token em toda chamada para garantir a segurança da comunicação.
-  **expires_in**: indica a quantidade de segundos que o token é válido. Quando esse tempo expirar, o Site B2B irá realizar uma nova chamada para o /token.
+  - **access_token**: é uma string que corresponde ao token retornado pela GIAPI. Ela será enviada no HEADER de todas as chamadas para a GIAPI. Cabe ao cliente validar esse token em toda chamada para garantir a segurança da comunicação.
+  - **expires_in**: indica a quantidade de segundos que o token é válido. Quando esse tempo expirar, o Site B2B irá realizar uma nova chamada para o /token.
