@@ -1,4 +1,4 @@
-﻿Endereços
+﻿Endpoints
 =========
 
 O Site B2B fornece os Webservices para integração com os sistemas internos dos clientes nos endereços abaixo:
