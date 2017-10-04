@@ -1,5 +1,5 @@
-﻿Fluxo de integração de revenda
-==============================
+﻿Fluxo de integração de revenda (SRM/RMA)
+========================================
 
 O diagrama abaixo ilustra o fluxo de cadastro de revenda:
 
