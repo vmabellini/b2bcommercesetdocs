@@ -5,7 +5,7 @@
 
 Independente da plataforma utilizada, o token de autenticação deve seguir estritamente o padrão descrito nesse documento. O sistema de token fornece a autenticação necessária para que o Site B2B se comunique com a GIAPI.
 
-O cliente que utilizar o nosso ClientTemplate da GIAPI como modelo já tera o sistema de token por padrão. O ASP.NET Web API 2 fornece esse sistema de autenticação default. Caso contrário, ele deve ser implementado na linguagem desejada pelo cliente, após um estudo sobre qual tecnologia será a mais adequada para prover a solução.
+O cliente que utilizar o nosso ClientTemplate da GIAPI como modelo já tera o sistema de token por padrão. O ASP.NET Web API 2 fornece esse sistema de autenticação default. Caso contrário, ele deve ser implementado na linguagem desejada pelo cliente, **após um estudo sobre qual tecnologia será a mais adequada para prover a solução**.
 
 Conceito
 --------
@@ -19,7 +19,7 @@ Conceito
    - username: nome de usuário configurado na tela Admin do Site B2B
    - password: senha configurada na tela Admin do Site B2B
 
-   Eis um exemplo de chamada retirado do **Fiddler*, para a URL "http://apidev.atma-it.com/", usuário "admin@yourapi.com" e senha "Password123!":
+   Eis um exemplo de chamada retirado do **Fiddler**, para a URL "http://apidev.atma-it.com/", usuário "admin@yourapi.com" e senha "Password123!":
 
    .. code-block:: html
 
@@ -47,3 +47,5 @@ Conceito
 Para testar de forma simples indicamos o uso do **Postman**, realizando a chamada conforme exemplo abaixo.
 
 .. image:: token_call.png
+
+É possível também testar a chamada do Site B2B para a GIAPI através do log de chamadas, conforme citado no tópico :doc:`Preparando o ambiente <preparo>`.
