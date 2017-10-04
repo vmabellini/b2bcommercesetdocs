@@ -49,3 +49,8 @@ Para testar de forma simples indicamos o uso do **Postman**, realizando a chamad
 .. image:: token_call.png
 
 É possível também testar a chamada do Site B2B para a GIAPI através do log de chamadas, conforme citado no tópico :doc:`Preparando o ambiente <preparo>`.
+
+Lidando com tokens inválidos
+----------------------------
+
+Caso a GIAPI receba um token inválido ou expirado ela deve retornar um código HTTP de erro 403 (forbidden). Assim o Site B2B entende que o token está invalidado e vai realizar uma nova chamada para o /token.
