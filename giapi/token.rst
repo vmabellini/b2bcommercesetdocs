@@ -50,6 +50,22 @@ Para testar de forma simples indicamos o uso do **Postman**, realizando a chamad
 
 É possível também testar a chamada do Site B2B para a GIAPI através do log de chamadas, conforme citado no tópico :doc:`Preparando o ambiente <preparo>`.
 
+Recebendo o token
+-----------------
+
+Depois de receber um access_token válido, todas as chamadas que o Site B2B realiza para a GIAPI irão enviar esse token no HEADER HTTP conforme exemplo abaixo:
+
+  .. code-block:: json
+
+     POST http://apidev.atma-it.com/api/v1/preco HTTP/1.1
+     Authorization: Bearer l8Im3uUH1Oxs8Dwj…DBza3-eDS7cDDh4hCSQdx
+     Content-Type: application/json
+
+     {
+        ...
+     }
+
+
 Lidando com tokens inválidos
 ----------------------------
 
