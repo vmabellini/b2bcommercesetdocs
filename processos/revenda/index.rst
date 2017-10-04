@@ -20,7 +20,7 @@ Conceitos principais
 FastTrack
 ---------
 
-TODO: bazan
+Em construção
 
 Criação de revenda
 ------------------
