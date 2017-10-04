@@ -18,6 +18,18 @@ Conceito
    - grant_type: "password" (valor fixo padrão)
    - username: nome de usuário configurado na tela Admin do Site B2B
    - password: senha configurada na tela Admin do Site B2B
+
+   Eis um exemplo de chamada retirado do **Fiddler*, para a URL "http://apidev.atma-it.com/", usuário "admin@yourapi.com" e senha "Password123!":
+
+   .. code-block:: html
+
+      POST http://apidev.atma-it.com/token HTTP/1.1
+      Host: apidev.atma-it.com
+      Content-Type: application/x-www-form-urlencoded
+
+
+      grant_type=password&username=admin%40yourapi.com&password=Password123!
+
 - A GIAPI deve retornar um token de autenticação através de uma resposta JSON no seguinte formato (OBRIGATÓRIO):
 
   .. code-block:: json
