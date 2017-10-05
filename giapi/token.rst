@@ -70,4 +70,4 @@ Depois de receber um access_token válido, todas as chamadas que o Site B2B real
 Lidando com tokens inválidos
 ----------------------------
 
-Caso a GIAPI receba um token inválido ou expirado ela deve retornar um código HTTP de erro 403 (forbidden). Assim o Site B2B entende que o token está invalidado e vai realizar uma nova chamada para o /token.
+Caso a GIAPI receba um token inválido ou expirado ela deve retornar um código HTTP de erro 401 (unauthorized). Assim o Site B2B entende que o token está invalidado e vai realizar uma nova chamada para o /token.
