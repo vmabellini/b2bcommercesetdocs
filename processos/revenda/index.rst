@@ -55,7 +55,7 @@ Cenários possíveis
 - A GIAPI retorna um código de erro 404 indicando que não foi encontrado nenhum registro para essa revenda
 - O Site B2B então entra no fluxo de cadastro da revenda
 - Depois do fluxo ser finalizado, o Site B2B armazena tudo em tabelas de pré-cadastro de revenda e em seguida envia via GIAPI para (http://apidev.atma-it.com/Help/Api/POST-api-v1-revenda)
-- No lado do ERP, cada cliente deve lidar de sua maneira com a solicitação da nova revenda. Geralmente ocorre um processo manual de análise e aprovação, para que essa revenda em seguida na base do ERP
+- No lado do ERP, cada cliente deve lidar de sua maneira com a solicitação da nova revenda. Geralmente ocorre um processo manual de análise e aprovação, para que essa revenda entre em seguida na base do ERP
 - O ERP deve então realizar a integração de revenda normalmente conforme o Cenário 1
 
 **Cenário 4: a revenda existe no ERP porém não tem nenhum contato cadastrado**
