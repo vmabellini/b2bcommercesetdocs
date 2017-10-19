@@ -1,6 +1,14 @@
 ﻿Últimos releases
 ================
 
+Versão 0.9.87
+-------------
+Ajuste no método de Boleto.
+Adição dos dados do pedido desmembrados por Centro de Distribuição. Não está implementado no layout de todos os clientes.
+Adição de um novo método para geração de respostas de erro via GIAPI: o objeto ErrorResponse. Consulte a documentação para mais detalhes.
+Adição do campo DataFaturamento no objeto PedidoSalesSetInformacoesAdicionaisRequest.
+
+
 Versão 0.9.86
 -------------
 
