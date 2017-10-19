@@ -3,91 +3,92 @@
 
 Versão 0.9.87
 -------------
-Ajuste no método de Boleto.
-Adição dos dados do pedido desmembrados por Centro de Distribuição. Não está implementado no layout de todos os clientes.
-Adição de um novo método para geração de respostas de erro via GIAPI: o objeto ErrorResponse. Consulte a documentação para mais detalhes.
-Adição do campo DataFaturamento no objeto PedidoSalesSetInformacoesAdicionaisRequest.
+
+- Ajuste no método de Boleto.
+- Adição dos dados do pedido desmembrados por Centro de Distribuição. Não está implementado no layout de todos os clientes.
+- Adição de um novo método para geração de respostas de erro via GIAPI: o objeto ErrorResponse. Consulte a documentação para mais detalhes.
+- Adição do campo DataFaturamento no objeto PedidoSalesSetInformacoesAdicionaisRequest.
 
 
 Versão 0.9.86
 -------------
 
-[OPCIONAL] Extensão de garantia: 
-Incluído campo de definição das extensões de garantia no PedidoItemRequest
-Novo método: api/v1/serialnumber - Realiza a busca do SerialNumber através do dado de entrada (código do pedido, código do pedido no ERP ou número da nota fiscal)
+- [OPCIONAL] Extensão de garantia: 
+  Incluído campo de definição das extensões de garantia no PedidoItemRequest
+- Novo método: api/v1/serialnumber - Realiza a busca do SerialNumber através do dado de entrada (código do pedido, código do pedido no ERP ou número da nota fiscal)
 
 
 Versão 0.9.85
 -------------
 
-Incluídas interfaces para facilitar as mudanças dos clientes caso os métodos da GIAPI sofram alteração ou sejam adicionados novos métodos
-Novo método na GIAPI para receber o status do pagamento de um pedido
-Envio de um novo campo ao fechar pedido (StatusPagamentoPedido no objeto PedidoRequest) para indicar se o status do pagamento será confirmado posteriormente (usado em alguns plugins de Cartão de Crédito)
-Adição da propriedade NumeroNotaFiscal e LinkNotaFiscal no objeto PedidoRequest
-Adição dos campos Simples e Contribuinte no objeto RevendaRequest
-Adição dos campos Grupo e OrdemDeExibicao no objeto PrazoDePagamentoItemResponse, o que permite agora retornar as opções de pagamento para outros plugins além do faturado
+- Incluídas interfaces para facilitar as mudanças dos clientes caso os métodos da GIAPI sofram alteração ou sejam adicionados novos métodos
+- Novo método na GIAPI para receber o status do pagamento de um pedido
+- Envio de um novo campo ao fechar pedido (StatusPagamentoPedido no objeto PedidoRequest) para indicar se o status do pagamento será confirmado posteriormente (usado em alguns plugins de Cartão de Crédito)
+- Adição da propriedade NumeroNotaFiscal e LinkNotaFiscal no objeto PedidoRequest
+- Adição dos campos Simples e Contribuinte no objeto RevendaRequest
+- Adição dos campos Grupo e OrdemDeExibicao no objeto PrazoDePagamentoItemResponse, o que permite agora retornar as opções de pagamento para outros plugins além do faturado
 
 
 Versão 0.9.84
 -------------
 
-Adição da RevendaId no request de Estoque
+- Adição da RevendaId no request de Estoque
 
 
 Versão 0.9.83
 -------------
 
-[OPCIONAL] Adicionado novo método para geração de relatórios de venda
+- [OPCIONAL] Adicionado novo método para geração de relatórios de venda
 
 
 
 Versão 0.9.82
 -------------
 
-Alteração do objeto PrazoDePagamentoRequest incluindo - por CD - PrazoDePagamentoCobrancaDeSTRequest , indicando se ST será cobrada no total do pedido.
+- Alteração do objeto PrazoDePagamentoRequest incluindo - por CD - PrazoDePagamentoCobrancaDeSTRequest , indicando se ST será cobrada no total do pedido.
 
 
 Versão 0.9.81
 -------------
 
-[SALES SET] Breaking changes em todo o sistema de frete do Sales Set: agora o frete é independente por filial
-CarrinhoFreteSalesSetRequest: adição dos campos DistributionCenterId e DistributionCenterPrefix, para identificar de qual filial é o request de frete
-CarrinhoFreteSalesSetItemRequest: adição do campo SKU e remoção do campo DistributionCenterId
-Criação do objeto CarrinhoSalesSetShippingRequest, para enviar os dados de frete por filial no carrinho de compras
-CarrinhoSalesSetRequest: inclusão da propriedade FretesSelecionados do tipo List<CarrinhoSalesSetShippingRequest>, para identificar cada seleção de frete por filial
-Criação do objeto PedidoFreteSalesSetRequest para enviar os dados de frete por filial na criação de pedido
-PedidoSalesSetRequest: remoção dos campos: TipoFrete, FormaEntregaId, OpcaoEntregaId. Esses dados devem ser lidos agora da lista FretePorCentroDistribuicao
+- [SALES SET] Breaking changes em todo o sistema de frete do Sales Set: agora o frete é independente por filial
+- CarrinhoFreteSalesSetRequest: adição dos campos DistributionCenterId e DistributionCenterPrefix, para identificar de qual filial é o request de frete
+- CarrinhoFreteSalesSetItemRequest: adição do campo SKU e remoção do campo DistributionCenterId
+- Criação do objeto CarrinhoSalesSetShippingRequest, para enviar os dados de frete por filial no carrinho de compras
+- CarrinhoSalesSetRequest: inclusão da propriedade FretesSelecionados do tipo List<CarrinhoSalesSetShippingRequest>, para identificar cada seleção de frete por filial
+- Criação do objeto PedidoFreteSalesSetRequest para enviar os dados de frete por filial na criação de pedido
+- PedidoSalesSetRequest: remoção dos campos: TipoFrete, FormaEntregaId, OpcaoEntregaId. Esses dados devem ser lidos agora da lista FretePorCentroDistribuicao
 
 
 Versão 0.9.80
 -------------
 
-[SALES SET] Alteração do objeto InfoMargemSalesSetRequest transformando os campos de porcentagem de int para decimal
-[SALES SET] Alteração do objeto PedidoRequest com os campos Encomenda e Necessidade
+- [SALES SET] Alteração do objeto InfoMargemSalesSetRequest transformando os campos de porcentagem de int para decimal
+- [SALES SET] Alteração do objeto PedidoRequest com os campos Encomenda e Necessidade
 
 
 Versão 0.9.79
 -------------
 
-[SALES SET] Alterações nas APIs de preço, frete e pedido contemplando o recurso de contexto de venda
+- [SALES SET] Alterações nas APIs de preço, frete e pedido contemplando o recurso de contexto de venda
 
 
 Versão 0.9.78
 -------------
 
-Adicionado o campo ValorUnitarioOriginal no objeto InfoMargemSalesSetRequest
-Adicionado novo método para obter OpcaoPagamentoSalesSet filtrada de acordo com o carrinho
+- Adicionado o campo ValorUnitarioOriginal no objeto InfoMargemSalesSetRequest
+- Adicionado novo método para obter OpcaoPagamentoSalesSet filtrada de acordo com o carrinho
 
 
 Versão 0.9.77
 -------------
 
-Refatoração dos métodos SalesSet de transportadora, banco e endereço, alterando a estrutura para POST e criando um objeto QueryRequest para passar os parâmetros
+- Refatoração dos métodos SalesSet de transportadora, banco e endereço, alterando a estrutura para POST e criando um objeto QueryRequest para passar os parâmetros
 
 Versões mais antigas ainda
 ==========================
 
-v0.9.76
+- v0.9.76
 
 Release notes
 
