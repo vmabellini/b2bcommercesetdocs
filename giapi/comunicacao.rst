@@ -44,3 +44,10 @@ Para tal seguem alguns conceitos básicos que devem ser seguidos durante o desen
 
   A partir da versão 17.6.x teremos também a opção de retornar um objeto específico de erro.
   Basta retornar o objeto ErrorResponse preenchido em qualquer uma das chamadas da GIAPI informando a mensagem de erro e o tipo do erro. Dessa maneira não é obrigatório retornar o código 500 do Http para informar algum problema.
+  
+    .. code-block:: json
+
+       {
+         "MessageError": "Mensagem de erro personalizada",
+         "MessageType": "Tipo da exceção"
+       }
