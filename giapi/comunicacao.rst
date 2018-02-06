@@ -48,6 +48,6 @@ Para tal seguem alguns conceitos básicos que devem ser seguidos durante o desen
   .. code-block:: json
 
      {
-       "errorMessage": "Mensagem de erro personalizada",
-       "errorType": "Tipo da exceção"
+       "ErrorMessage": "Mensagem de erro personalizada",
+       "ErrorType": "Tipo da exceção"
      }
