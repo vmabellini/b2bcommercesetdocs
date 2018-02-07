@@ -1,6 +1,26 @@
 ﻿Últimos releases
 ================
 
+Versão 0.9.89
+-------------
+
+-Envio de SubTotal nos PrazoDePagamentoRequest
+-Envio de dados do pagamento BNDES no PedidoRequest (quando o pagamento for efetuado com o plugin BNDES)
+-Reestruturação de alguns objetos para contemplar a possibilidade de Bundle controlado pelo ERP
+	-FreteItemRequest agora possui BundleId
+	-PedidoItemRequest agora possui BundleId
+	-PrazoDePagamentoItemRequest agora possui BundleId
+-Novo método na PedidoController para receber um arquivo relacionado ao pedido
+-Inclusão dos campos EmailFinanceiro e DataFundacao no objeto RevendaRequest
+
+
+Versão 0.9.88
+-------------
+
+- Inclusão do objeto DadosBancariosDepositoTransferencia
+- Inclusão de um novo campo no PedidoRequest: InformacoesDepositoTransferencia, que é uma lista de DadosBancariosDepositoTransferencia
+
+
 Versão 0.9.87
 -------------
 
