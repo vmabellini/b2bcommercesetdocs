@@ -24,3 +24,4 @@ Nos subtópicos seguintes abordaremos cada método de forma detalhada.
    revenda/index.rst
    produto/index.rst
    estoque/index.rst
+   pedido/index.rst
