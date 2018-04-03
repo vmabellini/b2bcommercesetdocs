@@ -1,7 +1,7 @@
 Atualizar estoque
 =======
 A atualização de estoque de variantes de produtos pode ser feita através do **AlterarDisponibilidadeDaCategoria** de dois modos:
-Variante :doc:`manual <../../webservices-b2b/produto/index.html?highlight=manual>` ou :doc:`automático <../../webservices-b2b/produto/index.html?highlight=manual>`.
+Variante manual ou automático (Saiba mais em :doc:`Produtos <../../../webservices-b2b/produto/index.html>`.
 
 Em qualquer um dos modos, deve ser preenchido o **PartNumber** do produto e a **Quantidade** com o novo estoque.
 
