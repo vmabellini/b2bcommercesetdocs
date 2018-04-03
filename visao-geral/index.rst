@@ -17,3 +17,70 @@ As demais informações que o site b2b precisa obter para seu funcionamento corr
 Essa integração irá ocorrer através de uma API REST que deverá ser desenvolvida pelo cliente. Dessa forma, o site B2B precisa apenas saber qual é a URL base do endereço dessa API genérica, e toda a comunicação entre as plataformas será efetuada.
 
 O site B2B provê ferramentas de log para que seja possível identificar quais são os requests sendo disparados para a GIAPI e quais são as respostas enviadas na integração.
+
+Modularização
+-------------
+
+A partir da versão 18.5, é possível modularizar quais recursos estarão disponíveis em seu Site B2B.
+
+A idéia é reduzir o tempo gasto para realizar as integrações, disponibilizando o novo Site B2B o mais rápido possível para seu cliente.
+
+Segue uma lista de módulos que podem ser ativados/desativados no sistema. Para alterar a disponibilidade desses módulos é necessário entrar em contato com o suporte técnico para que possamos realizar a configuração correta da sua loja. Para mais informações, consulte o nosso suporte técnico:
+
+** Módulos ativados por padrão **
+
+    * (Estoque) Verificação de estoque online
+
+    O Site B2B deixa de consultar o estoque em tempo real do ERP durante o fechamento do pedido.
+
+    Desativando esse módulo, elimina-se a necessidade de implementar a api /estoque.
+
+    * (Faturamento direto) Venda comissionada
+
+    Com isso o Site B2B não faz mais faturamento direto para um CPF ou CNPJ.
+
+    Desativando esse módulo, elimina-se a necessidade de implementar as apis de /clientefinal.
+
+    * (Comissões) Módulo de comissões do site
+
+    O Site B2B deixa de ter a funcionalidade de consulta e solicitação de comissões.
+
+    Desativando esse módulo, elimina-se a necessidade de implementar as apis de /comissao.
+
+    * (CEP) Módulo de consultar endereços via CEP no ERP
+
+    Desativando esse módulo, elimina-se a necessidade de implementar as apis de /cep.
+
+    * (Simulador de preços) Módulo de simulador de preço
+
+    O Site B2B possui um módulo que permite ao revendedor selecionar um Estado diferente e um tipo fiscal de cliente para simular os preços da loja em seu contexto. Geralmente utilizado em conjunto com a venda comissionada.
+
+    Desativando esse módulo, elimina-se a necessidade de implementar as apis de /preco/simulador e /precos/simulador (caso a API de /precos esteja ativada).
+
+** Módulos desativados por padrão **
+
+    * (Relatórios) Módulo que obtém relatórios personalizados através do ERP
+
+    Desativando esse módulo, elimina-se a necessidade de implementar as apis de /relatorios.
+
+    * (RMA) Módulo de Retorno de Mercadoria Avariada
+
+    O Site B2B possui um módulo com um passo-a-passo para o revendedor solicitar o retorno de uma mercadoria com problemas.
+
+    Desativando esse módulo, elimina-se a necessidade de implementar as apis de /rma.
+
+    * (Arquivos de pedido) Módulo que permite ao usuário subir arquivos relacionados a um pedido efetuado no Site B2B
+
+    Desativando esse módulo, elimina-se a necessidade de implementar as apis de /pedido/arquivo e /arquivospedido.
+
+    * (Lista de preços) Módulo de obter Lista de Preços da revendas
+
+    Desativando esse módulo, elimina-se a necessidade de implementar as apis de /preco/pricelist.
+
+    * (Preços múltiplos) Módulo para obter múltiplos preços simultaneamente pela GIAPI
+
+    Esse módulo serve como otimização, para evitar múltiplos requests simultâneos para a API de /preco durante a navegação do site.
+
+    Desativando esse módulo, elimina-se a necessidade de implementar as apis de /precos.
+
+
