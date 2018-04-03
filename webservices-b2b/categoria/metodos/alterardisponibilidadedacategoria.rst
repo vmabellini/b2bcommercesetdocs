@@ -2,6 +2,20 @@ Alterar disponibilidade da categoria
 =======
 A categoria pode ser publicada ou despublicada através do **AlterarDisponibilidadeDaCategoria**, preenchendo o **ErpId** da categoria e o **Publicado** com 0 para indisponível, 1 para disponível.
 
+.. list-table:: Propriedades da entidade
+   :widths: auto
+   :header-rows: 1
+
+   * - Propriedade
+     - Tipo
+     - Descrição
+   * - ErpId
+     - string
+     - Código da categoria no Erp. **Deve ser único**
+   * - Publicado
+     - bool
+     - Novo status da categoria
+
 Exemplo de request
 
 .. code-block:: xml
