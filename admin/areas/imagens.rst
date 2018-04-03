@@ -7,15 +7,15 @@ Dentro da **área administrativa** existe um link para essa ferramenta em **Cat�
 
 Antes de usar esse recurso, é essencial que você organize as imagens dos seus produtos através de pastas no formato abaixo:
 
-    Pasta Raiz
-    #. PartNumber1
-        #. Imagem1.png
-        #. Imagem2.png
-    #. PartNumber2
-        #. Foto1.jpg
-        #. 2.png
-    #. PartNumber3
-        #. Imagem1.png
+* Pasta Raiz
+    * PartNumber1
+        * Imagem1.png
+        * Imagem2.png
+    * PartNumber2
+        * Foto1.jpg
+        * 2.png
+    #* PartNumber3
+        * Imagem1.png
 
 Ou seja, colocar as imagens de cada produto dentro de uma pasta cujo nome seja idêntico ao Part Number do produto.
 
