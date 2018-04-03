@@ -84,3 +84,11 @@ Módulos desativados por padrão
     Esse módulo serve como otimização, para evitar múltiplos requests simultâneos para a API de /preco durante a navegação do site.
 
     Desativando esse módulo, elimina-se a necessidade de implementar as apis de /precos.
+
+    **(Sales Set) Módulo de vendas para a distribuidora**
+
+    Esse módulo permite que o Site B2B também sirva como ponto de entrada de pedidos feitos pelos vendedores da distribuidora, podendo alterar preço-base, regras de frete, liberando outras formas de pagamento e outros recursos.
+    
+    É um módulo bastante extenso e exige o desenvolvimento de muitas pontas da GIAPI.
+
+    Desativando esse módulo, elimina-se a necessidade de implementar as apis de /salesset. 
