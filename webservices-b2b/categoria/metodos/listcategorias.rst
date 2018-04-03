@@ -12,8 +12,55 @@ Exemplo de request
       <soapenv:Header/>
       <soapenv:Body>
          <tem:ListCategorias>
-            <tem:nome></tem:nome>
+            <tem:nome>Teste</tem:nome>
             <tem:pagina>0</tem:pagina>
          </tem:ListCategorias>
       </soapenv:Body>
    </soapenv:Envelope>
+   
+Exemplo de response
+
+.. code-block:: xml
+   
+   <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+      <s:Body>
+         <ListCategoriasResponse xmlns="http://tempuri.org/">
+            <ListCategoriasResult xmlns:a="http://schemas.datacontract.org/2004/07/B2B.Integration.Webservices.Categorias.DTO" 
+            xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+               <Error xmlns="http://schemas.datacontract.org/2004/07/B2B.Integration.Webservices">false</Error>
+               <ErrorType i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/B2B.Integration.Webservices"/>
+               <Message i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/B2B.Integration.Webservices"/>
+               <a:Categorias>
+                  <a:CategoriaDTO>
+                     <a:Descricao i:nil="true"/>
+                     <a:ErpId i:nil="true"/>
+                     <a:ErpIdPai i:nil="true"/>
+                     <a:Nome>Teste 5</a:Nome>
+                     <a:OrdemDeExibicao>0</a:OrdemDeExibicao>
+                  </a:CategoriaDTO>
+                  <a:CategoriaDTO>
+                     <a:Descricao i:nil="true"/>
+                     <a:ErpId i:nil="true"/>
+                     <a:ErpIdPai i:nil="true"/>
+                     <a:Nome>Teste 6</a:Nome>
+                     <a:OrdemDeExibicao>0</a:OrdemDeExibicao>
+                  </a:CategoriaDTO>
+                  <a:CategoriaDTO>
+                     <a:Descricao i:nil="true"/>
+                     <a:ErpId i:nil="true"/>
+                     <a:ErpIdPai i:nil="true"/>
+                     <a:Nome>Teste 9</a:Nome>
+                     <a:OrdemDeExibicao>0</a:OrdemDeExibicao>
+                  </a:CategoriaDTO>
+                  <a:CategoriaDTO>
+                     <a:Descricao i:nil="true"/>
+                     <a:ErpId i:nil="true"/>
+                     <a:ErpIdPai i:nil="true"/>
+                     <a:Nome>Teste 8</a:Nome>
+                     <a:OrdemDeExibicao>0</a:OrdemDeExibicao>
+                  </a:CategoriaDTO>
+               </a:Categorias>
+            </ListCategoriasResult>
+         </ListCategoriasResponse>
+      </s:Body>
+   </s:Envelope>
