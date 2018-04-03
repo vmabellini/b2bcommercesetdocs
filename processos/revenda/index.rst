@@ -17,10 +17,6 @@ Conceitos principais
      Além do usuário MASTER que possui permissão total dentro da revenda, é possível que a revenda crie N usuários CONVIDADOS.
      Cada usuário CONVIDADO pode ter restrições específicas de acesso ao site, sendo que essas restrições são configuráveis via Admin do Site B2B.
 
-FastTrack
----------
-
-Em construção
 
 Criação de revenda
 ------------------
