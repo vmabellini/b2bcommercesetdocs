@@ -27,7 +27,7 @@ A idéia é reduzir o tempo gasto para realizar as integrações, disponibilizan
 
 Segue uma lista de módulos que podem ser ativados/desativados no sistema. Para alterar a disponibilidade desses módulos é necessário entrar em contato com o suporte técnico para que possamos realizar a configuração correta da sua loja. Para mais informações, consulte o nosso suporte técnico:
 
-** Módulos ativados por padrão **
+**Módulos ativados por padrão**
 
     * (Estoque) Verificação de estoque online
 
@@ -57,7 +57,7 @@ Segue uma lista de módulos que podem ser ativados/desativados no sistema. Para 
 
     Desativando esse módulo, elimina-se a necessidade de implementar as apis de /preco/simulador e /precos/simulador (caso a API de /precos esteja ativada).
 
-** Módulos desativados por padrão **
+**Módulos desativados por padrão**
 
     * (Relatórios) Módulo que obtém relatórios personalizados através do ERP
 
