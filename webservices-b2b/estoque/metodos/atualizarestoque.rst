@@ -21,8 +21,6 @@ Exemplo de request utilizando Variantes Manuais
                     <b2b:PartNumber>AAA1111</b2b:PartNumber>
                     <b2b:VarianteProdutoEstoques>
                        <b2b:VarianteProdutoEstoqueDTO>
-                          <b2b:CentroDeDistribuicao>0</b2b:CentroDeDistribuicao>
-                          <b2b:CentroDeDistribuicaoPrefix></b2b:CentroDeDistribuicaoPrefix>
                           <b2b:Quantidade>10</b2b:Quantidade>
                           <b2b:Sku>AAA11111S</b2b:Sku>
                        </b2b:VarianteProdutoEstoqueDTO>
@@ -51,7 +49,6 @@ Exemplo de request utilizando Variantes Automáticos
                           <b2b:CentroDeDistribuicao>5</b2b:CentroDeDistribuicao>
                           <b2b:CentroDeDistribuicaoPrefix>SP</b2b:CentroDeDistribuicaoPrefix>
                           <b2b:Quantidade>10</b2b:Quantidade>
-                          <b2b:Sku></b2b:Sku>
                        </b2b:VarianteProdutoEstoqueDTO>
                     </b2b:VarianteProdutoEstoques>
                  </b2b:ProdutoEstoqueDTO>
