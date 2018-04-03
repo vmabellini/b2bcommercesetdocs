@@ -2,6 +2,20 @@ Alterar disponibilidade do fabricante
 =======
 O fabricante pode ser publicado ou despublicado através do **AlterarDisponibilidadeDoFabricante**, preenchendo o **ErpId** do fabricante e o **Publicado** com 0 para indisponível, 1 para disponível.
 
+.. list-table:: Propriedades da entidade
+   :widths: auto
+   :header-rows: 1
+
+   * - Propriedade
+     - Tipo
+     - Descrição
+   * - ErpId
+     - string
+     - Código do fabricante no Erp. **Deve ser único**
+   * - Publicado
+     - bool
+     - Novo status do fabricante
+
 Exemplo de request
 
 .. code-block:: xml
