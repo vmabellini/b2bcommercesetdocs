@@ -11,7 +11,6 @@ Exemplo de request
      <soapenv:Header/>
      <soapenv:Body>
         <tem:CreateProduto>
-           <!--Optional:-->
            <tem:produtoDto>
               <b2b:Altura>10</b2b:Altura>
               <b2b:Ativo>1</b2b:Ativo>
