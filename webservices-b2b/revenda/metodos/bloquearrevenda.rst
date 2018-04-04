@@ -1,6 +1,6 @@
 Bloquear revenda
 =======
-Para desativar uma revenda do B2B, através do **BloquearRevenda** envie o Id da revenda.
+Para desativar/bloquear uma revenda do B2B, através do **BloquearRevenda** envie o Id da revenda.
      
 Exemplo de request
 
