@@ -1,7 +1,7 @@
 Alterar endereço da revenda
 =======
 
-Disponível nas versões 17.5.0 e posteriores do Site B2B, o **CreateRevendaCompleta** cria uma Revenda e seus respectivos endereços através de uma única entidade:
+Para alterar um endereço de uma revenda, ou adicionar um que não tenha sido inserido antes, através do **SetRevendaEndereco** preencha a entidade com os seguintes atributos:
 
 .. list-table:: Propriedades da entidade
    :widths: auto
