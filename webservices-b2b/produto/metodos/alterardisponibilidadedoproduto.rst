@@ -15,7 +15,7 @@ O produto pode ser publicada ou despublicada através do **AlterarDisponibilidad
      - Partnumber do produto. **Deve ser único**
    * - Publicado
      - bool
-     - Novo status da categoria
+     - Novo status do produto
 
 Exemplo de request
 
