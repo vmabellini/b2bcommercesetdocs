@@ -12,3 +12,7 @@ Métodos
 .. toctree::
    
    metodos/alterarstatuspedidoerp.rst
+   metodos/integrarpedido.rst
+   metodos/listar.rst
+   metodos/listarnovos.rst
+   metodos/notificaralteracaodestatus.rst
