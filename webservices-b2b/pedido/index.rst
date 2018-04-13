@@ -16,3 +16,4 @@ Métodos
    metodos/listar.rst
    metodos/listarnovos.rst
    metodos/notificaralteracaodestatus.rst
+   metodos/consultarstatusdosite.rst
