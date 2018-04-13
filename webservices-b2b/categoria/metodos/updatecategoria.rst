@@ -2,6 +2,26 @@ Atualizar categoria
 =======
 Atualize uma categoria através do **UpdateCategoria**, sendo que a entidade deve ter o mesmo **ErpId** da a ser atualizada.
 
+.. list-table:: Propriedades da entidade
+   :widths: auto
+   :header-rows: 1
+
+   * - Propriedade
+     - Tipo
+     - Descrição
+   * - ErpId
+     - string
+     - Código da categoria no Erp. **Deve ser único**
+   * - Descricao
+     - string
+     - Descrição da categoria a ser criada
+   * - Nome
+     - string
+     - Nome da categoria exibido no Site B2B
+   * - ErpIdPai
+     - string
+     - ErpId da categoria pai. Caso essa categoria seja uma categoria raiz, deve-se enviar como null.
+
 Exemplo de request
 
 .. code-block:: xml
