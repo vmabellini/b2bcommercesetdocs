@@ -2,6 +2,23 @@ Criar fabricante
 =======
 Para criar um fabricante, deve ser enviada através do **CreateFabricante** a entidade com seus atributos preenchidos. 
 
+.. list-table:: Propriedades da entidade
+   :widths: auto
+   :header-rows: 1
+
+   * - Propriedade
+     - Tipo
+     - Descrição
+   * - ErpId
+     - string
+     - Código do fabricante no Erp. **Deve ser único**
+   * - Descricao
+     - string
+     - Descrição do fabricante a ser criado
+   * - Nome
+     - string
+     - Nome do fabricante exibido no Site B2B
+
 Exemplo de request
 
 .. code-block:: xml
