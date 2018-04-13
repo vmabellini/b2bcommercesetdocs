@@ -2,6 +2,23 @@ Atualizar fabricante
 =======
 Atualize um fabricante através do **UpdateFabricante**, sendo que a entidade deve ter o mesmo **ErpId** da a ser atualizada.
 
+.. list-table:: Propriedades da entidade
+   :widths: auto
+   :header-rows: 1
+
+   * - Propriedade
+     - Tipo
+     - Descrição
+   * - ErpId
+     - string
+     - Código do fabricante no Erp. **Deve ser único**
+   * - Descricao
+     - string
+     - Descrição do fabricante a ser criado
+   * - Nome
+     - string
+     - Nome do fabricante exibido no Site B2B
+
 Exemplo de request
 
 .. code-block:: xml
