@@ -2,6 +2,26 @@ Criar categoria
 =======
 Para criar uma categoria, deve ser enviada através do **CreateCategoria** a entidade com seus atributos preenchidos, sendo que, caso preenchido, o **ErpIdPai** já deve ter sido criado no B2B. 
 
+.. list-table:: Propriedades da entidade
+   :widths: auto
+   :header-rows: 1
+
+   * - Propriedade
+     - Tipo
+     - Descrição
+   * - ErpId
+     - string
+     - Código da categoria no Erp. **Deve ser único**
+   * - Descricao
+     - string
+     - Descrição da categoria a ser criada
+   * - Nome
+     - string
+     - Nome da categoria exibido no Site B2B
+   * - ErpIdPai
+     - string
+     - ErpId da categoria pai. Caso essa categoria seja uma categoria raiz, deve-se enviar como null.
+
 Exemplo de request
 
 .. code-block:: xml
