@@ -3,6 +3,81 @@ Criar produto
 
 Crie um produto através do **CreateProduto** enviando a entidade que tenha um **PartNumber** único. 
 
+.. list-table:: Propriedades da entidade
+   :widths: auto
+   :header-rows: 1
+
+   * - Propriedade
+     - Tipo
+     - Descrição
+   * - PartNumber
+     - string
+     - Código do produto no ERP. **Deve ser único.** 
+
+       Além de servirem como chave primária, os Part Numbers são propriedades importantes para a busca de produtos pois muitos vendedores utilizam esse código para localizar os produtos.
+   * - Nome
+     - string(400)
+     - Nome do produto. É o principal campo de busca além do Part Number, portanto deve ser bastante claro e amigável ao usuário.
+   * - Ativo
+     - bool
+     - Indica se o produto está ativo no site. Produtos inativos não ficam visíveis na busca, nas vitrines e nem permitem a compra.
+   * - DescricaoCurta
+     - string
+     - Descrição curta do produto. Apenas texto sem formatação.
+   * - DescricaoCompleta
+     - string
+     - Descrição completa do produto. Conteúdo pode ser enviado com formatação HTML, permitindo a inclusão de imagens, vídeos e links para deixar a página bastante completa.
+   * - FabricanteErpId
+     - string
+     - ErpId do fabricante do produto. Todo produto precisa ter um fabricante vinculado.
+   * - CategoriaErpIds
+     - string
+     - ErpId das categorias do produto. Um produto pode estar vinculado a mais de uma categoria ao mesmo tempo.
+   * - Altura
+     - decimal
+     - Altura do produto.
+   * - Peso
+     - decimal
+     - Peso do produto.
+   * - Profundidade
+     - decimal
+     - Profundidade do produto.
+   * - Largura
+     - decimal
+     - Largura do produto.
+   * - EAN
+     - string
+     - Campo aberto para poissível EAN.
+   * - CodigoErp
+     - int
+     - Campo aberto para poissível código do Erp.
+   * - CodigoFiscal
+     - int
+     - Campo aberto para poissível código fiscal do Erp.
+   * - ExtensaoDeGarantia
+     - bool
+     - 0 para não ter extensao de garantia, 1 para ter.
+   * - Atributos
+     - Lista de ProdutoAtributoDTO
+     - Lista com os atributos do produto
+   * - AtributosDoSistema
+     - Lista de ProdutoAtributoDTO
+     - Lista com os atributos do sistema do produto
+
+.. list-table:: Propriedades do ProdutoAtributoDTO
+   :widths: auto
+   :header-rows: 1
+
+   * - Propriedade
+     - Tipo
+     - Descrição
+   * - NomeDoAtributo
+     - string
+     - Nome do atributo 
+   * - Valor
+     - string
+     - Valor do atributo 
+
 Exemplo de request
 
 .. code-block:: xml
