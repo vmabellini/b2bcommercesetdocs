@@ -17,7 +17,35 @@ Dentro do modelo de pedidos, um pedido do webservice pode ser quebrado em N pedi
    * - Status
      - OrderSiteStatus
      - Novo status do pedido (Descricao)
+   * - Arquivos
+     - ArquivosPedidoDTO
+     - Contem uma lista de Arquivos do pedido.
      
+.. list-table:: Propriedades do ArquivosPedidoDTO
+   :widths: auto
+   :header-rows: 1
+
+   * - Propriedade
+     - Tipo
+     - Descrição
+   * - Arquivos
+     - Lista de ArquivosPedidoItemResponse
+     - Lista com arquivos do pedido
+
+.. list-table:: Propriedades do ArquivosPedidoItemResponse
+   :widths: auto
+   :header-rows: 1
+
+   * - Propriedade
+     - Tipo
+     - Descrição
+   * - TipoArquivo
+     - TipoDeArquivoDTO
+     - Indica qual arquivo está sendo enviado
+   * - Url
+     - string
+     - Contém a url onde o arquivo está hospedado.
+
 .. list-table:: OrderSiteStatus
    :widths: auto
    :header-rows: 1
@@ -37,6 +65,29 @@ Dentro do modelo de pedidos, um pedido do webservice pode ser quebrado em N pedi
    * - 5
      - Entrega
 
+.. list-table:: TipoDeArquivoDTO
+   :widths: auto
+   :header-rows: 1
+
+   * - Id
+     - Descricao
+   * - 0
+     - SegundaViaBoleto
+   * - 1
+     - SegundaViaTransferencia
+   * - 2
+     - Xml
+   * - 3
+     - Danfe
+   * - 4
+     - NumeroDeSerie
+   * - 5
+     - GARE
+   * - 6
+     - GNRE
+   * - 7
+     - Outros
+
 Exemplo de request
 
 .. code-block:: xml
@@ -45,6 +96,20 @@ Exemplo de request
       <soapenv:Header/>
       <soapenv:Body>
          <tem:AtualizarStatusPedidoErp>
+          <b2b:Arquivos>
+               <!--Optional:-->
+               <b2b:Arquivos>
+                  <!--Zero or more repetitions:-->
+                  <b2b:ArquivosPedidoItemResponse>
+                     <b2b:TipoArquivo>Danfe</b2b:TipoArquivo>
+                     <b2b:Url>http://www.meuservidor.com/danfe.pdf</b2b:Url>
+                  </b2b:ArquivosPedidoItemResponse>
+                  <b2b:ArquivosPedidoItemResponse>
+                     <b2b:TipoArquivo>SegundaViaBoleto</b2b:TipoArquivo>
+                     <b2b:Url>http://www.meuservidor.com/boleto.pdf</b2b:Url>
+                  </b2b:ArquivosPedidoItemResponse>
+               </b2b:Arquivos>
+            </b2b:Arquivos>
             <!--Optional:-->
             <tem:statusPedidoErpDto>
                <b2b:ErpId>123456</b2b:ErpId>
