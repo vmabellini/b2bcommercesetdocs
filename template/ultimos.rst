@@ -1,6 +1,20 @@
 ﻿Últimos releases
 ================
 
+Versão 0.9.90
+-------------
+
+- Adicionado campo Texto no objeto ImpostoResponse, para retornar um texto detalhando o cálculo do imposto caso necessário
+- EnderecoRequest: campo Numero (int?) foi depreciado. A partir de agora, utilizar o campo NumeroString. Para as integrações já existentes a compatibilidade continua
+- RevendaRequest: campo Numero (int?) foi depreciado. A partir de agora, utilizar o campo NumeroString. Para as integrações já existentes a compatibilidade continua
+- RevendaRequest: adicionado o campo MEI (bool?) para indicar se a revenda é MEI
+- PrazoDePagamentoResponse: adicionado um novo objeto para retornar mensagens de erro
+- PrazoDePagamentoItemRequest: adicionado um novo campo Sku para os clientes que utilizam variantes manuais
+- PedidoRequest: adicionado o campo Origem (string) para determinar de onde veio o pedido
+- ClienteFinalFisicoRequest: adicionado o campo DataNascimento (DateTime?) para indicar a data de nascimento do cliente final
+- ClienteFinalJuridicoRequest: adicionado o campo DataFundacao (DateTime?) para indicar a data de fundação do cliente final
+
+
 Versão 0.9.89
 -------------
 
