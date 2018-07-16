@@ -10,3 +10,14 @@ Eis abaixo a lista de mudanças:
 - O parâmetro "grupo" deve ser preenchido com o nome de sistema do plugin de pagamento. No caso, "Payments.BraspagFaturado" é o valor correto.
 - Para os itens do plugin do pagamento Faturado tradicional, basta deixar o "grupo" vazio ou colocar como "Payments.Faturado".
 - O campo "ordemDeExibicao" não é obrigatório mas é importante utilizá-lo para ordenar cada grupo e exibir os itens de forma organizada.
+
+﻿Retornar mensagens customizadas nas opções de pagamentos
+================================================
+
+A partir da versão 18.15 do Site B2B, implementamos a opção de retornar mensagens customizadas a serem exibidas para o cliente nos métodos de pagamento na tela de finalizar pedido.
+
+- Ao solicitarmos os prazos de pagamentos, se o retorno tiver uma lista de mensagens preenchidas com o Grupo contendo o nome do sistema do plugin, seu Tipo (Erro, Alerta, Info) e sua mensagem, será exibida uma mensagem de alerta ou erro para ele. Por exemplo, enviar uma resposta com o Grupo "Payments.BraspagFaturado", do Tipo "Erro", e a mensagem, será exibida essa mensagem apenas nesse método de plugin.
+- Caso a mensagem tiver como Grupo "Global", a mensagem será exibida em todos os métodos de pagamento.
+- Se o Grupo não for preenchido, a mensagem é atrelada a opção de pagamento faturado, mantendo a funcionalidade original antes da versão 18.15 do Site B2B.
+
+Obs: O nome do plugin pode ser encontrado indo até a lista de plugins instalados no seu Site B2B: Painel de administração, Configurações, Formas De Pagamento. O nome a ser usado no grupo está na coluna "Nome do sistema".
