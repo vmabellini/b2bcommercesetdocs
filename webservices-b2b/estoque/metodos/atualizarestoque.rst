@@ -1,6 +1,6 @@
 Atualizar estoque
 =======
-A atualização de estoque de variantes de produtos pode ser feita através do **AlterarDisponibilidadeDaCategoria** de dois modos:
+A atualização de estoque de variantes de produtos pode ser feita através do **Atualizar estoques** de dois modos:
 Variante manual ou automático (Saiba mais em :doc:`Produtos <../../produto/index>`).
 
 Em qualquer um dos modos, deve ser preenchido o **PartNumber** do produto e a **Quantidade** com o novo estoque.
