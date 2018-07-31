@@ -56,7 +56,7 @@ Crie um produto através do **CreateProduto** enviando a entidade que tenha um *
      - Campo aberto para poissível código fiscal do Erp.
    * - ExtensaoDeGarantia
      - bool
-     - 0 para não ter extensao de garantia, 1 para ter.
+     - 0 para não ser extensao de garantia, 1 para ser.
    * - Atributos
      - Lista de ProdutoAtributoDTO
      - Lista com os atributos do produto

@@ -83,8 +83,7 @@ Métodos adicionais do modo manual
 
 .. toctree::
 
-   metodos/alterardisponibilidadedovariante.rst
-   metodos/alterarvisibilidadedevariantedoproduto.rst
+   metodos/alterardisponibinilidadedovariante.rst
    metodos/createprodutovariante.rst
    metodos/deleteprodutovariante.rst
    metodos/getvariante.rst
