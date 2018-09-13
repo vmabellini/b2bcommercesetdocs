@@ -8,3 +8,4 @@
    opcoesprazopagto/index.rst
    rma/index.rst
    precificacao/index.rst
+   vendacomissionada/index.rst
