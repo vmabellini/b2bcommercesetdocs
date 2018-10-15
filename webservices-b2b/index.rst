@@ -25,3 +25,4 @@ Nos subtópicos seguintes abordaremos cada método de forma detalhada.
    produto/index.rst
    estoque/index.rst
    pedido/index.rst
+   tco/index.rst

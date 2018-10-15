@@ -1,5 +1,5 @@
 Criar produto
-=======
+=============
 
 Crie um produto através do **CreateProduto** enviando a entidade que tenha um **PartNumber** único. 
 
@@ -63,6 +63,9 @@ Crie um produto através do **CreateProduto** enviando a entidade que tenha um *
    * - AtributosDoSistema
      - Lista de ProdutoAtributoDTO
      - Lista com os atributos do sistema do produto
+   * - IsTCO
+     - bool
+     - 0 para não ser um produto TCO, 1 para ser.
 
 .. list-table:: Propriedades do ProdutoAtributoDTO
    :widths: auto

@@ -27,6 +27,10 @@ O Site B2B fornece os Webservices para integração com os sistemas internos dos
    * SOAP/WSDL: http://endereço-da-loja/webservice/Revendas/RevendaWebService.svc?wsdl
    * REST: http://endereço-da-loja/webservice/Revendas/RevendaWebService.svc/rest
 
+* Calculadora TCO
+   * SOAP/WSDL: http://endereço-da-loja/webservice/TCO/TcoWebService.svc?wsdl
+   * REST: http://endereço-da-loja/TCO/TCO/TcoWebService.svc/rest
+
 
 **OBS: Para os endereços REST, adicione /Help no final do endereço para consultar os exemplos**
 

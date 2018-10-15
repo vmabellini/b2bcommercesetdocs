@@ -63,6 +63,9 @@ Atualize um produto através do **UpdateProduto** enviando a entidade que tenha 
    * - AtributosDoSistema
      - Lista de ProdutoAtributoDTO
      - Lista com os atributos do sistema do produto
+   * - IsTCO
+     - bool
+     - 0 para não ser um produto TCO, 1 para ser.
 
 .. list-table:: Propriedades do ProdutoAtributoDTO
    :widths: auto

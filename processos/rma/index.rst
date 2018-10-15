@@ -59,11 +59,11 @@ A implementação desse módulo é bastante simples:
      - bool
      
 ﻿Consulta de detalhes de solicitação
-=================================
+=====================================
 # Quando o usuário consultar as solicitações, e selecionar alguma para ver os detalhes, será solicitado via GIAPI os seus detalhes (http://apidev.atma-it.com/Help/Api/GET-api-v1-rma-detalhes-srmId)
 
 ﻿Atualização de status de RMA
-=================================
+=====================================
 # O status de RMA pode ser atualizado via WebService através do método AtualizarStatus (https://atmab2b.readthedocs.io/pt_BR/latest/webservices-b2b/rma/AtualizacaoStatus.html)
 
   
