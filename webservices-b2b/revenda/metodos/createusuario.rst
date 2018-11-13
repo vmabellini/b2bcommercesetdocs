@@ -33,9 +33,9 @@ Para ter acesso ao B2B, é necessário criar um usuário com login e senha que �
    * - Senha
      - string
      - Senha que o usuário usará para acessar o site
-   * - ERPId
+   * - ErpId
      - string
-     - Id do usuário no ERP
+     - Id do usuário no Erp
     
      
 Exemplo de request
@@ -56,7 +56,7 @@ Exemplo de request
               <b2b:RevendaId>123</b2b:RevendaId>
               <b2b:Segmento>Teste</b2b:Segmento>
               <b2b:Senha>123456</b2b:Senha>
-              <b2b:ERPId>COD001</b2b:ERPId>
+              <b2b:ErpId>COD001</b2b:ErpId>
            </tem:usuario>
         </tem:CreateUsuario>
      </soapenv:Body>
