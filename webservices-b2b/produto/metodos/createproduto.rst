@@ -66,6 +66,9 @@ Crie um produto através do **CreateProduto** enviando a entidade que tenha um *
    * - IsTCO
      - bool
      - 0 para não ser um produto TCO, 1 para ser.
+   * - RelatedPartnumbers
+     - List<string>
+     - Partnumbers relacionados a esse produto. Pode ser usado em algumas configurações do site.
 
 .. list-table:: Propriedades do ProdutoAtributoDTO
    :widths: auto
@@ -116,6 +119,10 @@ Exemplo de request
               <b2b:PartNumber>AAA-12345</b2b:PartNumber>
               <b2b:Peso>10</b2b:Peso>
               <b2b:Profundidade>2</b2b:Profundidade>
+              <b2b:RelatedPartnumbers>
+                  <arr:string>132456</arr:string>
+                  <arr:string>654321</arr:string>
+              </b2b:RelatedPartnumbers>
               <b2b:ShowOnHomePage>1</b2b:ShowOnHomePage>
            </tem:produtoDto>
         </tem:CreateProduto>
