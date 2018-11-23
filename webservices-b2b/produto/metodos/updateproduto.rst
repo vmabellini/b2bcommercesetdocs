@@ -120,9 +120,11 @@ Exemplo de request
               <b2b:Peso>10</b2b:Peso>
               <b2b:Profundidade>2</b2b:Profundidade>
               <b2b:RelatedPartnumbers>
-                  <arr:string>132456</arr:string>
-                  <arr:string>654321</arr:string>
-              </b2b:RelatedPartnumbers>
+                <b2b:RelatedPartnumber>
+                  <b2b:Partnumber>123456</b2b:Partnumber>
+                  <b2b:Partnumber>654321</b2b:Partnumber>
+               </b2b:RelatedPartnumber>
+            </b2b:RelatedPartnumbers>
               <b2b:ShowOnHomePage>1</b2b:ShowOnHomePage>
            </tem:produtoDto>
         </tem:UpdateProduto>
