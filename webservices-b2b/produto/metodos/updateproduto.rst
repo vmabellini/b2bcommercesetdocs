@@ -122,14 +122,16 @@ Exemplo de request
               <b2b:RelatedPartnumbers>
                 <b2b:RelatedPartnumber>
                   <b2b:Partnumber>123456</b2b:Partnumber>
-                  <b2b:Partnumber>654321</b2b:Partnumber>
-               </b2b:RelatedPartnumber>
-            </b2b:RelatedPartnumbers>
-              <b2b:ShowOnHomePage>1</b2b:ShowOnHomePage>
-           </tem:produtoDto>
-        </tem:UpdateProduto>
-     </soapenv:Body>
-  </soapenv:Envelope>
+                  </b2b:RelatedPartnumber>
+                  <b2b:RelatedPartnumber>
+                     <b2b:Partnumber>654321</b2b:Partnumber>
+                  </b2b:RelatedPartnumber>
+               </b2b:RelatedPartnumbers>
+                 <b2b:ShowOnHomePage>1</b2b:ShowOnHomePage>
+              </tem:produtoDto>
+           </tem:UpdateProduto>
+        </soapenv:Body>
+     </soapenv:Envelope>
 
   
 Exemplo de response
