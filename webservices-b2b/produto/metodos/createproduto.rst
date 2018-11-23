@@ -128,7 +128,7 @@ Exemplo de request
                 </b2b:RelatedPartnumber>
                </b2b:RelatedPartnumbers>
                <b2b:ShowOnHomePage>1</b2b:ShowOnHomePage>
-              </tem:produtoDto>
+            </tem:produtoDto>
         </tem:CreateProduto>
      </soapenv:Body>
   </soapenv:Envelope>
