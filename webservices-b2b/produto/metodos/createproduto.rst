@@ -67,7 +67,7 @@ Crie um produto através do **CreateProduto** enviando a entidade que tenha um *
      - bool
      - 0 para não ser um produto TCO, 1 para ser.
    * - RelatedPartnumbers
-     - List<string>
+     - List<RelatedPartNumber>
      - Partnumbers relacionados a esse produto. Pode ser usado em algumas configurações do site.
 
 .. list-table:: Propriedades do ProdutoAtributoDTO
