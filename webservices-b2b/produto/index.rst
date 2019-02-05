@@ -77,6 +77,7 @@ Métodos gerais
    metodos/getproduto.rst
    metodos/updateproduto.rst
    metodos/vincularacategoria.rst
+   metodos/getarquivosproduto.rst
 
 Métodos adicionais do modo manual
 ---------------------------------
