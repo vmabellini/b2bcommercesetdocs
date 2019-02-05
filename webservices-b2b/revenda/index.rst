@@ -18,3 +18,4 @@ Métodos
    metodos/getrevenda.rst
    metodos/setrevendaendereco.rst
    metodos/updaterevenda.rst
+   metodos/getrevendasid.rst
