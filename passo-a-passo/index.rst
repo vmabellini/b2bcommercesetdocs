@@ -146,3 +146,6 @@ Fase 3
      - API
      - /pedido/arquivo e /arquivospedido
      - Consulta de arquivos relacionados aos pedidos
+
+
+OBS: alguns módulos opcionais não estão visíveis nessa lista.
