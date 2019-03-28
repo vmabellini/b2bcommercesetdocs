@@ -1,6 +1,9 @@
 ﻿Retornar opções de pagamento para outros plugins
 ================================================
 
+** ATENÇÃO: a partir da versão 0.10.0 da GIAPI o método /prazoDePagamento foi descontinuado **
+** Verificar a documentação do NOVO CHECKOUT **
+
 A partir da versão 17.2.0 do Site B2B (versão 0.9.85 da GIAPI), implementamos mudanças na API de retorno de prazos de pagamento para que seja possível retornar opções para outros plugins de pagamento, além do tradicional Pagamento Faturado. Com isso, alguns plugins como Braspag e Moip podem ter seus totais calculados do lado do ERP e retornados via API de acordo com as regras de negócio específicas de cada cliente.
 
 Eis abaixo a lista de mudanças:
@@ -11,8 +14,11 @@ Eis abaixo a lista de mudanças:
 - Para os itens do plugin do pagamento Faturado tradicional, basta deixar o "grupo" vazio ou colocar como "Payments.Faturado".
 - O campo "ordemDeExibicao" não é obrigatório mas é importante utilizá-lo para ordenar cada grupo e exibir os itens de forma organizada.
 
-﻿Retornar mensagens customizadas nas opções de pagamentos
-================================================
+Retornar mensagens customizadas nas opções de pagamentos
+========================================================
+
+** ATENÇÃO: a partir da versão 0.10.0 da GIAPI o método /prazoDePagamento foi descontinuado **
+** Verificar a documentação do NOVO CHECKOUT **
 
 A partir da versão 18.15 do Site B2B, implementamos a opção de retornar mensagens customizadas a serem exibidas para o cliente nos métodos de pagamento na tela de finalizar pedido.
 

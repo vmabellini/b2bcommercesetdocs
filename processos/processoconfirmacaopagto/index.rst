@@ -13,7 +13,7 @@ Ao fechar o pedido nós enviamos no objeto **PedidoRequest** uma propriedade cha
 - **Pendente** - significa que o ERP deve integrar o pedido, porém deve aguardar a confirmação para que ele continue seu fluxo.
 
 Quando o pedido é enviado como Pendente, o site irá enviar os dados de cartão de crédito para o respectivo gateway de pagamento, obter a resposta e então chamar um outro método da GI API: pedido/pagamento/status.
-Esse método recebe o ID do pedido do site e o novo status, que pode ser: 
+Esse método recebe o ID do pedido do site e o novo status, que pode ser:
 
 - Confirmado - significa que o pagamento foi aprovado pelo Gateway e o pedido pode prosseguir no ERP
 - Erro - significa que o pagamento não foi aprovado por algum motivo e por isso o pedido deve ser cancelado no ERP. O pedido também é cancelado automaticamente no site.

@@ -1,6 +1,13 @@
 ﻿Últimos releases
 ================
 
+Versão 0.10.0
+-------------
+
+- Removidos os endpoints referentes ao projeto Sales Set (descontinuado)
+- Os módulos /frete e /prazopagamento foram marcados como descontinuados devido ao novo módulo de checkout /checkout
+- Adicionada documentação referente ao módulo /checkout
+
 Versão 0.9.90
 -------------
 

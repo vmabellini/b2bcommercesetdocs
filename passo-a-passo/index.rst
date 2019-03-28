@@ -16,7 +16,133 @@ Para facilitar o processo de desenvolvimento de toda a integração, **nós reco
 
 Recomendamos que o desenvolvimento da GIAPI se inicie através dos métodos de obtenção de preço de produtos, pois eles costumam ser muito requisitados e podem servir como um bom parâmetro para medir o desempenho da comunicação entre as plataformas.
 
-Preparando o Site B2B
----------------------
 
-Depois de seguir as instruções e configurar as integrações com os webservices do Site B2B e também criar a GIAPI
+Divisão do projeto
+==================
+
+Recomendamos seguir a tabela abaixo para delimitar cada versão da integração.
+Essa tabela serve como guideline para que seja possível subir o site com o mínimo de funcionalidades básicas necessárias para o início da operação.
+
+Fase 1
+------
+
+.. list-table:: Fase 1
+   :widths: auto
+   :header-rows: 1
+
+   * - Módulo
+     - Tipo de integração
+     - Método
+     - Descrição
+   * - Categorias
+     - WebService
+     - CreateCategoria
+     - Integração básica de catálogo
+   * - Fabricantes
+     - WebService
+     - CreateFabricante
+     - Integração básica de catálogo
+   * - Produtos
+     - WebService
+     - CreateProduto
+     - Integração básica de catálogo
+   * - Produtos
+     - WebService
+     - VincularACategoria
+     - Integração básica de catálogo
+   * - Estoque
+     - WebService
+     - AtualizarEstoque
+     - Integração básica de catálogo
+   * - Token
+     - API
+     - /token
+     - Autenticação com a GIAPI
+   * - Pedido
+     - API
+     - /checkout
+     - Cálculo e exibição de frete e formas de pagamento
+   * - Preço
+     - API
+     - /preco e /precos
+     - Fornecimento de preços de acordo com o usuário logado
+
+Fase 2
+------
+
+.. list-table:: Fase 2
+   :widths: auto
+   :header-rows: 1
+
+   * - Módulo
+     - Tipo de integração
+     - Método
+     - Descrição
+   * - Revendas
+     - Webservice
+     - CreateRevendaCompleta
+     - Carrega os dados da revenda no site B2B
+   * - Revendas
+     - Webservice
+     - CreateUsuario
+     - Carrega os dados do usuário vinculado à revenda no site B2B
+   * - Pedidos
+     - WebService
+     - ListarNovos
+     - Obtenção dos pedidos pendentes de integração (caso utilize a integração PASSIVA de pedidos)
+   * - Pedidos
+     - WebService
+     - IntegrarPedido
+     - Notificação de pedido integrado (caso utilize a integração PASSIVA de pedidos)
+   * - Preço
+     - API
+     - /preco/simulador e /precos/simulador
+     - Simulador de preço
+   * - Pedidos
+     - API
+     - /pedido
+     - Envio de pedido para o ERP (caso utilize a integração ATIVA de pedidos)
+   * - Pedidos
+     - API
+     - /pedido/pesquisa
+     - Listagem de pedidos registrados no ERP
+   * - Pedidos
+     - API
+     - /pedido/notafiscal
+     - Consulta de notas fiscais dos pedidos
+
+Fase 3
+------
+
+.. list-table:: Fase 3
+   :widths: auto
+   :header-rows: 1
+
+   * - Módulo
+     - Tipo de integração
+     - Método
+     - Descrição
+   * - Estoque
+     - API
+     - /estoque
+     - Verificação de estoque em tempo real antes de fechar um pedido
+   * - Cliente Final
+     - API
+     - /clientefinal/*
+     - Busca e envio de dados de cliente final para o módulo de faturamento direto
+   * - Revendas
+     - API
+     - /revenda/*
+     - Busca e envio de dados de revendas e usuários do site
+   * - Comissões
+     - API
+     - /comissao/*
+     - Consulta e solicitação de comissões (quando ativado o módulo de faturamento direto)
+   * - CEP
+     - API
+     - /cep
+     - Consulta de endereços por CEP
+   * - Pedidos
+     - API
+     - /pedido/arquivo e /arquivospedido
+     - Consulta de arquivos relacionados aos pedidos
