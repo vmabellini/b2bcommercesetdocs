@@ -1,6 +1,4 @@
-
-
-Criar bundle 
+Atualizar bundle 
 =======
 
 Exemplo de request
