@@ -23,6 +23,7 @@ Nos subtópicos seguintes abordaremos cada método de forma detalhada.
    fabricante/index.rst
    revenda/index.rst
    produto/index.rst
+   bundle/index.rst
    estoque/index.rst
    pedido/index.rst
    tco/index.rst
