@@ -69,6 +69,12 @@ Crie um produto através do **CreateProduto** enviando a entidade que tenha um *
    * - RelatedPartnumbers
      - List<RelatedPartNumber>
      - Partnumbers relacionados a esse produto. Pode ser usado em algumas configurações do site.
+   * - ContextoBundle
+     - Opções: Normal, SomenteBundleEVisivelNoSite, SomenteBundleEOcultoNoSite
+     - Permite que um produto seja vendido somente como bundle
+
+       Produtos somente bundle não podem ser vendidos a não ser que estejam dentro de um bundle
+       Duas opções distintas: o produto pode aparecer na busca e vitrine no site, ou completamente oculto
 
 .. list-table:: Propriedades do ProdutoAtributoDTO
    :widths: auto
