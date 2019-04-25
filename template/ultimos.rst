@@ -1,6 +1,18 @@
 ﻿Últimos releases
 ================
 
+Versão 0.10.1
+-------------
+
+- CheckoutRequest: adicionado campo PrecoUnitarioSemDesconto na classe ItemDoCarrinho
+- CheckoutRequest: removido campo BundleId da classe Desconto
+- CheckoutRequest: removido campo CategoriaId da classe Desconto
+
+- CheckoutResponse: adicionado campo PrecoUnitarioSemDesconto na classe ItemDoCarrinho
+- CheckoutResponse: adicionado campo ValorSemDesconto na classe Opcao
+- CheckoutResponse: adicionado campo ValorSemDesconto na classe SubOpcao
+- CheckoutResponse: removido campo PorcentagemDesconto da classe Totais
+
 Versão 0.10.0
 -------------
 
