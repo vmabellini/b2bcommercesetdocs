@@ -157,7 +157,7 @@ Disponível nas versões 17.5.0 e posteriores do Site B2B, o **CreateRevendaComp
      - string
      - Cep (apenas números)
      
- .. list-table:: Propriedades do TipoDeVenda
+.. list-table:: Propriedades do TipoDeVenda
    :widths: auto
    :header-rows: 1
 
