@@ -309,7 +309,8 @@ Nesse momento o B2B irá esperar como resposta as opções de frete e pagamento 
 - É OBRIGATÓRIO devolver o mesmo ID que foi enviado no request
 - É OBRIGATÓRIO devolver pelo menos uma opção de frete por CD, cada opção obrigatoriamente com um ID próprio
 - É OBRIGATÓRIO devolver opções de pagamento para cada plugin disponível no site, cada uma com um ID próprio
-- É possível enviar mensagens de erro no objeto "mensagens"
+- É OBRIGATÓRIO calcular corretamente todos os subtotais e totais pela api /checkout. Isso dá maior poder para que o ERP possa calcular livremente os preços e ajustar qualquer regra de taxa/impostos livremente
+
 
 No caso acima são ilustradas duas formas de fornecer opções de frete: a tradicional e uma com mais de um nível, permitindo por exemplo opções FOB e CIF com sub-opções a serem exibidas em um drop-down.
 
@@ -427,3 +428,39 @@ Esse é o modelo tradicional que traz as opções de forma simples, por Centro d
 O modelo 2 traz sub-opções, permitindo escolhas de frete mais dinâmicas que são exibidas conforme modelo acima.
 
 OBS: para os clientes que já estão integrados com o B2B sem a nova API de /checkout, somente o modelo 1 será permitido e o frete será por carrinho e não por CD.
+
+
+Retornando erros
+----------------
+
+Caso o estado do carrinho atual esteja com algum problema ou invalidado por alguma regra de negócio, é possível retornar erros no objeto "mensagens". Os erros serão exibidos na tela de acordo com sua criticidade.
+
+Descontos
+---------
+
+Os descontos aplicados pelo B2B são enviados no objeto Descontos dentro do CheckoutRequest.
+Os descontos devem ser calculados pelo ERP e aplicados corretamente nos totais, de acordo com o tipo de desconto informado e qual sua aplicação.
+
+A propriedade TipoDesconto indica qual o tipo de desconto cadastrado no B2B sendo aplicado no carrinho:
+
+- 0 - Produto
+- 1 - Bundle
+- 2 - Categoria
+- 3 - Frete
+- 4 - Subtotal
+- 5 - Total
+
+O desconto terá preenchida a propriedade PorcentagemDesconto ou ValorDesconto, para indicar se o cálculo deve ser percentual ou absoluto de acordo com o preço do produto/frete/total.
+
+Cada PartNumber do carrinho terá indicado seu desconto específico. O ERP não precisa classificar ou ordenar esse desconto, basta ler o desconto de cada item e aplicar de acordo com o que está preenchido no objeto Request. A lógica fica por conta do B2B.
+
+Itens Selecionados
+------------------
+
+Conforme o usuário navega pelo checkout, ele irá selecionar as opções de frete e pagamento. Cada alteração no estado do checkout leva a outro request para a API do /checkout, sempre com o mesmo ID para que o integração possa manter também um estado do carrinho e evitar recalcular tudo a cada request novo.
+
+É possível verificar quais são as opções selecionadas pelo usuário através dos objetos 'FretesSelecionados', 'PagamentoSelecionadoId' e 'PagamentoSelecionadoTotalId'.
+
+- FretesSelecionados: lista com o ID de cada opção de frete selecionada por CD
+- PagamentoSelecionadoId: nome do plugin de pagamento selecionado (igual ao campo "formaDePagamento" da resposta)
+- PagamentoSelecionadoTotalId: ID da opção de pagamento selecionada
