@@ -20,8 +20,9 @@ Com isso a GI API também sofreu alterações. Um novo endpoint foi criado: /che
 - Permitir seleção de frete em dois níveis (mais detalhes abaixo)
 - Ter maior controle sobre os preços dos produtos, frete e pagamento de acordo com o carrinho de compras
 
-
 Para os novos clientes do Site B2B o uso do novo endpoint /checkout é obrigatório.
+
+Para os clientes já existentes criamos um modo de compatibilidade com as APIs de /frete e /prazopagamento. A maior diferença é que com esse modo, não é possível aproveitar todos os novos recursos do novo checkout, como a possibilidade de ter um frete único por CD.
 
 O guia abaixo mostra como funciona esse novo endpoint e quais os cuidados que devem ser tomados para sua correta implementação.
 
@@ -310,7 +311,7 @@ Nesse momento o B2B irá esperar como resposta as opções de frete e pagamento 
 - É OBRIGATÓRIO devolver pelo menos uma opção de frete por CD, cada opção obrigatoriamente com um ID próprio
 - É OBRIGATÓRIO devolver opções de pagamento para cada plugin disponível no site, cada uma com um ID próprio
 - É OBRIGATÓRIO calcular corretamente todos os subtotais e totais pela api /checkout. Isso dá maior poder para que o ERP possa calcular livremente os preços e ajustar qualquer regra de taxa/impostos livremente
-
+- No request inicial o usuário ainda não selecionou: tipo de venda, frete e pagamento. A API deve lidar com esses valores em branco sem retornar nenhum erro.
 
 No caso acima são ilustradas duas formas de fornecer opções de frete: a tradicional e uma com mais de um nível, permitindo por exemplo opções FOB e CIF com sub-opções a serem exibidas em um drop-down.
 
@@ -430,6 +431,15 @@ O modelo 2 traz sub-opções, permitindo escolhas de frete mais dinâmicas que s
 OBS: para os clientes que já estão integrados com o B2B sem a nova API de /checkout, somente o modelo 1 será permitido e o frete será por carrinho e não por CD.
 
 
+**Métodos de pagamento**
+
+A estrutura para o fornecimento dos totais de pagamento é bastante similar à antiga API de /prazopagamento.
+
+A GIAPI deve retornar um conjunto de formas de pagamento, cada uma contendo as opções de parcelamento disponíveis para o carrinho em questão, bem como os seus totais respectivos.
+
+O nome a ser usado no campo "formaDePagamento" depende de quais plugins serão disponibilizados com o seu B2B. Consulte o nosso suporte técnico para saber quais são os nomes corretos a serem utilizados em cada plugin.
+
+
 Retornando erros
 ----------------
 
@@ -464,3 +474,9 @@ Conforme o usuário navega pelo checkout, ele irá selecionar as opções de fre
 - FretesSelecionados: lista com o ID de cada opção de frete selecionada por CD
 - PagamentoSelecionadoId: nome do plugin de pagamento selecionado (igual ao campo "formaDePagamento" da resposta)
 - PagamentoSelecionadoTotalId: ID da opção de pagamento selecionada
+
+Fechamento de Pedido
+--------------------
+
+Quando o usuário do site resolver concluir o pedido, uma última chamada para o /checkout será realizada para uma validação final - essa chamada não difere das outras, portanto não existe nenhum tipo de validação adicional a ser efetuada pela GIAPI.
+Caso não exista nenhum erro, a API de pedido será chamada (no.
