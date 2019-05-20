@@ -24,7 +24,6 @@ Nos subtópicos seguintes abordaremos cada método de forma detalhada.
    revenda/index.rst
    produto/index.rst
    bundle/index.rst
-   checkout/index.rst
    estoque/index.rst
    pedido/index.rst
    tco/index.rst

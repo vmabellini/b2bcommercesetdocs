@@ -14,3 +14,4 @@ Nos subtópicos seguintes detalhamos melhor todo o processo de integração.
    preparo.rst
    token.rst
    comunicacao.rst
+   checkout/index.rst
