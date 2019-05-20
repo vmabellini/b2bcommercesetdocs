@@ -61,6 +61,9 @@ Disponível nas versões 17.5.0 e posteriores do Site B2B, o **CreateRevendaComp
    * - Suframa
      - string
      - Campo dedicado a revendas atreladas a Superintendência da Zona Franca de Manaus
+   * - TiposDeVendaBloqueados
+     - List<TipoDeVenda>
+     - Campo que deve ter uma lista de Tipos de Venda, para informar os tipos de venda bloqueados para essa revenda
    * - Grupo
      - string
      - Campo aberto para preencher de acordo com um possível grupo da revenda
@@ -154,6 +157,16 @@ Disponível nas versões 17.5.0 e posteriores do Site B2B, o **CreateRevendaComp
      - string
      - Cep (apenas números)
      
+.. list-table:: Opções do TipoDeVenda
+   :widths: auto
+   :header-rows: 1
+
+   * - Opções
+   * - VendaRevenda
+   * - VendaConsumo
+   * - VendaComissionada
+   * - VendaComissionadaRevenda
+   * - ContaOrdemFatura
      
 Exemplo de request
 
@@ -193,6 +206,10 @@ Exemplo de request
               <b2b:SituacaoId>1</b2b:SituacaoId>
               <b2b:Suframa>Exemplo de conteúdo de suframa</b2b:Suframa>
               <b2b:Tipo>1</b2b:Tipo>
+              <b2b:TiposDeVendaBloqueados>
+               <nop:TipoDeVenda>VendaComissionada</nop:TipoDeVenda>
+               <nop:TipoDeVenda>VendaRevenda</nop:TipoDeVenda>
+              </b2b:TiposDeVendaBloqueados>
               <b2b:VendedorResponsavelEmail>teste@vendedor.com</b2b:VendedorResponsavelEmail>
               <b2b:Website>teste.com.br</b2b:Website>
               <b2b:EnderecoCobranca>

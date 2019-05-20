@@ -88,6 +88,9 @@ Atualize uma revenda através do **UpdateRevenda** enviando a entidade da revend
    * - Segmento
      - string
      - Segmento Id da revenda
+   * - TiposDeVendaBloqueados
+     - List<TipoDeVenda>
+     - Campo que deve ter uma lista de Tipos de Venda, para informar os tipos de venda bloqueados para essa revenda
    * - Contribuinte
      - bool
      - Controla se a revenda é contribuinte ou não
@@ -115,6 +118,17 @@ Atualize uma revenda através do **UpdateRevenda** enviando a entidade da revend
    * - Valor
      - string
      - Valor do atributo
+     
+.. list-table:: Opções do TipoDeVenda
+   :widths: auto
+   :header-rows: 1
+
+   * - Opções
+   * - VendaRevenda
+   * - VendaConsumo
+   * - VendaComissionada
+   * - VendaComissionadaRevenda
+   * - ContaOrdemFatura
      
 Exemplo de request
 
@@ -150,6 +164,10 @@ Exemplo de request
               <b2b:RamoAtividadeId>1</b2b:RamoAtividadeId>
               <b2b:RazaoSocial>Exemplo de razão social</b2b:RazaoSocial>
               <b2b:Segmento>1</b2b:Segmento>
+              <b2b:TiposDeVendaBloqueados>
+               <nop:TipoDeVenda>VendaComissionada</nop:TipoDeVenda>
+               <nop:TipoDeVenda>VendaRevenda</nop:TipoDeVenda>
+              </b2b:TiposDeVendaBloqueados>
               <b2b:SetorId>1</b2b:SetorId>
               <b2b:SituacaoId>1</b2b:SituacaoId>
               <b2b:Suframa>Exemplo de conteúdo de suframa</b2b:Suframa>

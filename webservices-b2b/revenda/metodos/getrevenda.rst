@@ -54,6 +54,10 @@ Exemplo de response
                  <a:SituacaoId i:nil="true"/>
                  <a:Suframa i:nil="true"/>
                  <a:Tipo i:nil="true"/>
+                 <a:TiposDeVendaBloqueados xmlns:b="http://schemas.datacontract.org/2004/07/Nop.Core.B2B.Domain.Revendas">
+                  <b:TipoDeVenda>VendaComissionada</b:TipoDeVenda>
+                  <b:TipoDeVenda>VendaRevenda</b:TipoDeVenda>
+                 </a:TiposDeVendaBloqueados>
                  <a:VendedorErpId i:nil="true"/>
                  <a:VendedorResponsavelEmail i:nil="true"/>
                  <a:Website i:nil="true"/>
