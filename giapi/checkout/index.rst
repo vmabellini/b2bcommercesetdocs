@@ -315,7 +315,7 @@ No caso acima são ilustradas duas formas de fornecer opções de frete: a tradi
 
 **Modelos de frete**
 
-No exemplo de resposta acima vemos dois tipos de modelos:
+No exemplo de resposta acima vemos dois tipos de modelos de frete:
 
 
   .. code-block:: json
@@ -354,6 +354,7 @@ No exemplo de resposta acima vemos dois tipos de modelos:
 
 .. image:: frete01.png
 
+Esse é o modelo tradicional que traz as opções de forma simples, por Centro de Distribuição, conforme imagem acima.
 
   .. code-block:: json
 
@@ -422,3 +423,7 @@ No exemplo de resposta acima vemos dois tipos de modelos:
 
 .. image:: frete02.png
 
+
+O modelo 2 traz sub-opções, permitindo escolhas de frete mais dinâmicas que são exibidas conforme modelo acima.
+
+OBS: para os clientes que já estão integrados com o B2B sem a nova API de /checkout, somente o modelo 1 será permitido e o frete será por carrinho e não por CD.
