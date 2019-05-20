@@ -30,9 +30,9 @@ Cenário
 
 O antigo modelo de checkout fragmentava as informações em diferentes chamadas para a GI API:
 
-/preco - retornava o preço de cada item do carrinho
-/frete - calculava o total de frete baseado no carrinho de compras
-/prazopagamento - retornava as opções de pagamento total para cada plugin de pagamento, baseado no carrinho e frete
+- /preco - retornava o preço de cada item do carrinho
+- /frete - calculava o total de frete baseado no carrinho de compras
+- /prazopagamento - retornava as opções de pagamento total para cada plugin de pagamento, baseado no carrinho e frete
 
 O novo modelo centraliza todas essas informações em um único endpoint. Com isso, cada alteração no checkout dispara uma nova chamada para a api /checkout com o ESTADO COMPLETO do checkout, ou seja, o carrinho, o frete selecionado, o pagamento selecionado e etc.
 A idéia desse modelo é permitir que a integração tenha um controle maior para a precificação dos itens, opções de frete individuais para cada CD e totais para cada plugin de pagamento de forma única.
@@ -313,7 +313,7 @@ Nesse momento o B2B irá esperar como resposta as opções de frete e pagamento 
 
 No caso acima são ilustradas duas formas de fornecer opções de frete: a tradicional e uma com mais de um nível, permitindo por exemplo opções FOB e CIF com sub-opções a serem exibidas em um drop-down.
 
-Modelos de frete
+**Modelos de frete**
 
 No exemplo de resposta acima vemos dois tipos de modelos:
 
