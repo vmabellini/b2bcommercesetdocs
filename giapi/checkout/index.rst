@@ -479,4 +479,12 @@ Fechamento de Pedido
 --------------------
 
 Quando o usuário do site resolver concluir o pedido, uma última chamada para o /checkout será realizada para uma validação final - essa chamada não difere das outras, portanto não existe nenhum tipo de validação adicional a ser efetuada pela GIAPI.
-Caso não exista nenhum erro, a API de pedido será chamada (no.
+Caso não exista nenhum erro, o processo de conclusão de pedido irá prosseguir conforme configuração da loja (via GIAPI /pedido ou então de forma passiva via webservice de Pedidos).
+
+Resumo e Recomendações
+----------------------
+
+- A nova API /checkout permite total controle sobre todos os valores do carrinho de compras
+- As chamadas são realizadas a cada alteração do estado do checkout - alteração de quantidade de itens, seleção de frete e pagamento por exemplo
+- Ao desenvolver a API de /checkout, procure armazenar em memória, banco de dados ou qualquer recurso de rápido acesso as informações já calculadas do estado daquele checkout, controlando a "sessão" através do id informado pelo B2B.
+- A experiência do novo checkout permite que o usuário altere vários campos rapidamente - mas o desempenho da resposta da GIAPI é fundamental para que não ocorra nenhum problema ou lentidão
