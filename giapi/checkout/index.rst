@@ -42,7 +42,7 @@ Gerenciando o estado do checkout
 --------------------------------
 
 Dessa maneira, apesar de agora todas as chamadas serem centralizadas em uma única API, a integração precisa ter o cuidado de gerenciar corretamente o estado do carrinho de compras e otimizar as chamadas para que o desempenho de cada requisição-resposta seja rápido.
-Para ilustrar melhor esse conceito segue abaixo um exemplo de como funcionaria na prática todo o processo de checkout para um usuário João com dois itens em seu carrinho de compras:
+Para ilustrar melhor esse conceito segue abaixo um exemplo de como funcionaria na prática o processo de checkout para um usuário com dois itens em seu carrinho de compras:
 
 
 **Primeiro request**
