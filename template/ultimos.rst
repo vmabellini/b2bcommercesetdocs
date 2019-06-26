@@ -1,6 +1,14 @@
 ﻿Últimos releases
 ================
 
+Versão 0.10.2
+-------------
+
+- CheckoutRequest: adicionado estrutura de Dimensoes nos itens do pedido
+- ComissaoDetalheResponse: adicionados os campos: ObservacoesDoPedido, ValorDoPedido, DANFE, ParcelaDaComissao, NomeVendedor, NomeComprador
+- ComissaoDetalheItemResponse: adicionado o objeto DetalheAvancado com os campos: NomeDoProduto, ValorUsuario, ValorDaRevenda, ComissaoBruta, ValorIcmsTeIssIpi, ValorPisCofins, ValorFrete, TaxaAdm, ComissaoExtra
+
+
 Versão 0.10.1
 -------------
 
