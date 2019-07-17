@@ -58,10 +58,14 @@ Fase 1
      - API
      - /token
      - Autenticação com a GIAPI
-   * - Pedido
+   * - Frete
      - API
-     - /checkout
-     - Cálculo e exibição de frete e formas de pagamento
+     - /frete
+     - Cálculo e exibição de frete
+   * - Prazo de Pagamento
+     - API
+     - /prazoDePagamento
+     - Cálculo e exibição das formas de pagamento
    * - Preço
      - API
      - /preco e /precos

@@ -1,7 +1,7 @@
 Novo Checkout
 =============
 
-A partir da versão 19.15 do Site B2B colocamos no ar um novo modelo de checkout.
+A partir da versão 19.15 do Site B2B colocamos no ar um novo layout para o checkout.
 
 .. image:: fig01.png
 
@@ -20,16 +20,14 @@ Com isso a GI API também sofreu alterações. Um novo endpoint foi criado: /che
 - Permitir seleção de frete em dois níveis (mais detalhes abaixo)
 - Ter maior controle sobre os preços dos produtos, frete e pagamento de acordo com o carrinho de compras
 
-Para os novos clientes do Site B2B o uso do novo endpoint /checkout é obrigatório.
-
-Para os clientes já existentes criamos um modo de compatibilidade com as APIs de /frete e /prazopagamento. A maior diferença é que com esse modo, não é possível aproveitar todos os novos recursos do novo checkout, como a possibilidade de ter um frete único por CD.
+Para os novos clientes do Site B2B o uso do novo endpoint /checkout é recomendado SOMENTE nos casos onde os requisitos acima são muito importantes. Caso o seu modelo não precise dessas funcionalidades indicamos o uso das APIs de /frete e /prazopagamento, pois o desenvolvimento é bem menos complexo.
 
 O guia abaixo mostra como funciona esse novo endpoint e quais os cuidados que devem ser tomados para sua correta implementação.
 
-Cenário
--------
+Cenário - NOVA API /checkout
+----------------------------
 
-O antigo modelo de checkout fragmentava as informações em diferentes chamadas para a GI API:
+O modelo tradicional do checkout fragmenta as informações em diferentes chamadas para a GI API:
 
 - /preco - retornava o preço de cada item do carrinho
 - /frete - calculava o total de frete baseado no carrinho de compras
