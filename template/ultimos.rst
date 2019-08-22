@@ -1,6 +1,12 @@
 ﻿Últimos releases
 ================
 
+Versão 0.10.3
+-------------
+
+- CheckoutResponse: adicionada estrutura de Payload nos totais de pagamento
+- Os endpoints /frete e /prazopagamento não estão mais descontinuados
+
 Versão 0.10.2
 -------------
 
